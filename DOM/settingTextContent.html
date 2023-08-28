@@ -17,6 +17,7 @@
       #story {
         width: 30rem;
         height: 3rem;
+        text-align: center;
       }
       button {
         font-size: 1.2rem;
@@ -37,6 +38,7 @@
 
       <button id="change-story" type="button">Change Story</button>
     </div>
+
     <!-- JavaScript -->
     <script>
       const story = document.querySelector("#story");
@@ -56,7 +58,7 @@
       // Changing Text Content
       const changingTExt = document.querySelector("#change-story");
       changingTExt.addEventListener("click", () => {
-        story.textContent = "The story is changed";
+        story.textContent = prompt("Enter the story you want");
       });
     </script>
   </body>
